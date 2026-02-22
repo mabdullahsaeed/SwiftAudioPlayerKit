@@ -38,12 +38,7 @@ public struct AudioPlayerConfiguration {
     public let enableRemoteCommands: Bool
     public let enableNowPlayingInfo: Bool
 
-    public init(
-        supportedPlaybackSpeeds: [Double] = [1.0, 1.25, 1.5, 1.75, 2.0],
-        completionThreshold: Double = 0.9,
-        enableRemoteCommands: Bool = true,
-        enableNowPlayingInfo: Bool = true
-    ) {
+    public init(supportedPlaybackSpeeds: [Double] = [1.0, 1.25, 1.5, 1.75, 2.0], completionThreshold: Double = 0.9, enableRemoteCommands: Bool = true, enableNowPlayingInfo: Bool = true) {
         self.supportedPlaybackSpeeds = supportedPlaybackSpeeds
         self.completionThreshold = min(max(completionThreshold, 0.0), 1.0)
         self.enableRemoteCommands = enableRemoteCommands

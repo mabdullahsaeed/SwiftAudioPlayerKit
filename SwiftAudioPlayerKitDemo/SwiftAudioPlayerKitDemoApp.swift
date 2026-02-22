@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct CustomAudioPlayerDemoApp: App {
+struct SwiftAudioPlayerKitDemoApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

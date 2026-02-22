@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		99AA00012F49000100C0DE01 /* CustomAudioPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885FF9442F481614002E6EE4 /* CustomAudioPlayer.framework */; };
-		99AA00022F49000100C0DE01 /* CustomAudioPlayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 885FF9442F481614002E6EE4 /* CustomAudioPlayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		99AA00012F49000100C0DE01 /* SwiftAudioPlayerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885FF9442F481614002E6EE4 /* SwiftAudioPlayerKit.framework */; };
+		99AA00022F49000100C0DE01 /* SwiftAudioPlayerKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 885FF9442F481614002E6EE4 /* SwiftAudioPlayerKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -17,37 +17,37 @@
 			containerPortal = 885FF93B2F481614002E6EE4 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 885FF9432F481614002E6EE4;
-			remoteInfo = CustomAudioPlayer;
+			remoteInfo = SwiftAudioPlayerKit;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		99AA00082F49000100C0DE01 /* Embed Frameworks */ = {
+		99AA00082F49000100C0DE01 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				99AA00022F49000100C0DE01 /* CustomAudioPlayer.framework in Embed Frameworks */,
+				99AA00022F49000100C0DE01 /* SwiftAudioPlayerKit.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		885FF9442F481614002E6EE4 /* CustomAudioPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CustomAudioPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		99AA00032F49000100C0DE01 /* CustomAudioPlayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomAudioPlayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		885FF9442F481614002E6EE4 /* SwiftAudioPlayerKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftAudioPlayerKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		99AA00032F49000100C0DE01 /* SwiftAudioPlayerKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftAudioPlayerKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		885FF9462F481614002E6EE4 /* CustomAudioPlayer */ = {
+		885FF9462F481614002E6EE4 /* SwiftAudioPlayerKit */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = CustomAudioPlayer;
+			path = SwiftAudioPlayerKit;
 			sourceTree = "<group>";
 		};
-		99AA00042F49000100C0DE01 /* CustomAudioPlayerDemo */ = {
+		99AA00042F49000100C0DE01 /* SwiftAudioPlayerKitDemo */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = CustomAudioPlayerDemo;
+			path = SwiftAudioPlayerKitDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -64,7 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99AA00012F49000100C0DE01 /* CustomAudioPlayer.framework in Frameworks */,
+				99AA00012F49000100C0DE01 /* SwiftAudioPlayerKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,8 +74,8 @@
 		885FF93A2F481614002E6EE4 = {
 			isa = PBXGroup;
 			children = (
-				885FF9462F481614002E6EE4 /* CustomAudioPlayer */,
-				99AA00042F49000100C0DE01 /* CustomAudioPlayerDemo */,
+				885FF9462F481614002E6EE4 /* SwiftAudioPlayerKit */,
+				99AA00042F49000100C0DE01 /* SwiftAudioPlayerKitDemo */,
 				885FF9452F481614002E6EE4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -83,8 +83,8 @@
 		885FF9452F481614002E6EE4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				885FF9442F481614002E6EE4 /* CustomAudioPlayer.framework */,
-				99AA00032F49000100C0DE01 /* CustomAudioPlayerDemo.app */,
+				885FF9442F481614002E6EE4 /* SwiftAudioPlayerKit.framework */,
+				99AA00032F49000100C0DE01 /* SwiftAudioPlayerKitDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,9 +102,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		885FF9432F481614002E6EE4 /* CustomAudioPlayer */ = {
+		885FF9432F481614002E6EE4 /* SwiftAudioPlayerKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 885FF94D2F481614002E6EE4 /* Build configuration list for PBXNativeTarget "CustomAudioPlayer" */;
+			buildConfigurationList = 885FF94D2F481614002E6EE4 /* Build configuration list for PBXNativeTarget "SwiftAudioPlayerKit" */;
 			buildPhases = (
 				885FF93F2F481614002E6EE4 /* Headers */,
 				885FF9402F481614002E6EE4 /* Sources */,
@@ -116,23 +116,23 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				885FF9462F481614002E6EE4 /* CustomAudioPlayer */,
+				885FF9462F481614002E6EE4 /* SwiftAudioPlayerKit */,
 			);
-			name = CustomAudioPlayer;
+			name = SwiftAudioPlayerKit;
 			packageProductDependencies = (
 			);
-			productName = CustomAudioPlayer;
-			productReference = 885FF9442F481614002E6EE4 /* CustomAudioPlayer.framework */;
+			productName = SwiftAudioPlayerKit;
+			productReference = 885FF9442F481614002E6EE4 /* SwiftAudioPlayerKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		99AA00092F49000100C0DE01 /* CustomAudioPlayerDemo */ = {
+		99AA00092F49000100C0DE01 /* SwiftAudioPlayerKitDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 99AA00152F49000100C0DE01 /* Build configuration list for PBXNativeTarget "CustomAudioPlayerDemo" */;
+			buildConfigurationList = 99AA00152F49000100C0DE01 /* Build configuration list for PBXNativeTarget "SwiftAudioPlayerKitDemo" */;
 			buildPhases = (
 				99AA00062F49000100C0DE01 /* Sources */,
 				99AA00052F49000100C0DE01 /* Frameworks */,
 				99AA00072F49000100C0DE01 /* Resources */,
-				99AA00082F49000100C0DE01 /* Embed Frameworks */,
+				99AA00082F49000100C0DE01 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -140,13 +140,13 @@
 				99AA00112F49000100C0DE01 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				99AA00042F49000100C0DE01 /* CustomAudioPlayerDemo */,
+				99AA00042F49000100C0DE01 /* SwiftAudioPlayerKitDemo */,
 			);
-			name = CustomAudioPlayerDemo;
+			name = SwiftAudioPlayerKitDemo;
 			packageProductDependencies = (
 			);
-			productName = CustomAudioPlayerDemo;
-			productReference = 99AA00032F49000100C0DE01 /* CustomAudioPlayerDemo.app */;
+			productName = SwiftAudioPlayerKitDemo;
+			productReference = 99AA00032F49000100C0DE01 /* SwiftAudioPlayerKitDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -167,7 +167,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 885FF93E2F481614002E6EE4 /* Build configuration list for PBXProject "CustomAudioPlayer" */;
+			buildConfigurationList = 885FF93E2F481614002E6EE4 /* Build configuration list for PBXProject "SwiftAudioPlayerKit" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -181,8 +181,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				885FF9432F481614002E6EE4 /* CustomAudioPlayer */,
-				99AA00092F49000100C0DE01 /* CustomAudioPlayerDemo */,
+				885FF9432F481614002E6EE4 /* SwiftAudioPlayerKit */,
+				99AA00092F49000100C0DE01 /* SwiftAudioPlayerKitDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -224,7 +224,7 @@
 /* Begin PBXTargetDependency section */
 		99AA00112F49000100C0DE01 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 885FF9432F481614002E6EE4 /* CustomAudioPlayer */;
+			target = 885FF9432F481614002E6EE4 /* SwiftAudioPlayerKit */;
 			targetProxy = 99AA00102F49000100C0DE01 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -376,7 +376,7 @@
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = personal.CustomAudioPlayer;
+				PRODUCT_BUNDLE_IDENTIFIER = personal.SwiftAudioPlayerKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -412,7 +412,7 @@
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = personal.CustomAudioPlayer;
+				PRODUCT_BUNDLE_IDENTIFIER = personal.SwiftAudioPlayerKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -444,7 +444,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = personal.CustomAudioPlayerDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = personal.SwiftAudioPlayerKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -470,7 +470,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = personal.CustomAudioPlayerDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = personal.SwiftAudioPlayerKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -482,7 +482,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		885FF93E2F481614002E6EE4 /* Build configuration list for PBXProject "CustomAudioPlayer" */ = {
+		885FF93E2F481614002E6EE4 /* Build configuration list for PBXProject "SwiftAudioPlayerKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				885FF94B2F481614002E6EE4 /* Debug */,
@@ -491,7 +491,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		885FF94D2F481614002E6EE4 /* Build configuration list for PBXNativeTarget "CustomAudioPlayer" */ = {
+		885FF94D2F481614002E6EE4 /* Build configuration list for PBXNativeTarget "SwiftAudioPlayerKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				885FF94E2F481614002E6EE4 /* Debug */,
@@ -500,7 +500,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		99AA00152F49000100C0DE01 /* Build configuration list for PBXNativeTarget "CustomAudioPlayerDemo" */ = {
+		99AA00152F49000100C0DE01 /* Build configuration list for PBXNativeTarget "SwiftAudioPlayerKitDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				99AA00132F49000100C0DE01 /* Debug */,

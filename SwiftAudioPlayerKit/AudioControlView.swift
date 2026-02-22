@@ -7,13 +7,7 @@ public struct AudioControlViewStyle {
     public let speedBackgroundColor: Color
     public let speedTextColor: Color
 
-    public init(
-        backgroundColor: Color = Color.black.opacity(0.85),
-        iconColor: Color = .white,
-        timeTextColor: Color = .gray,
-        speedBackgroundColor: Color = Color.gray.opacity(0.25),
-        speedTextColor: Color = .white
-    ) {
+    public init(backgroundColor: Color = Color.black.opacity(0.85), iconColor: Color = .white, timeTextColor: Color = .gray, speedBackgroundColor: Color = Color.gray.opacity(0.25), speedTextColor: Color = .white) {
         self.backgroundColor = backgroundColor
         self.iconColor = iconColor
         self.timeTextColor = timeTextColor
@@ -29,11 +23,7 @@ public struct AudioControlView: View {
     private let waveformBars: [CGFloat]?
     private let style: AudioControlViewStyle
 
-    public init(
-        controller: AudioPlayerController,
-        waveformBars: [CGFloat]? = nil,
-        style: AudioControlViewStyle = .init()
-    ) {
+    public init(controller: AudioPlayerController, waveformBars: [CGFloat]? = nil, style: AudioControlViewStyle = .init()) {
         _controller = StateObject(wrappedValue: controller)
         self.waveformBars = waveformBars
         self.style = style
@@ -41,9 +31,7 @@ public struct AudioControlView: View {
 
     private var resolvedBars: [CGFloat] {
         if let waveformBars {
-            return waveformBars.isEmpty
-                ? WaveformDataFactory.placeholderBars(count: 40, maxHeight: 35)
-                : waveformBars
+            return waveformBars.isEmpty ? WaveformDataFactory.placeholderBars(count: 40, maxHeight: 35) : waveformBars
         }
 
         if generatedBars.isEmpty {
@@ -55,12 +43,7 @@ public struct AudioControlView: View {
 
     public var body: some View {
         VStack(spacing: 0) {
-            WaveformView(
-                progress: controller.duration > 0 ? controller.currentTime / controller.duration : 0,
-                duration: controller.duration,
-                barHeights: resolvedBars,
-                onSeek: { controller.seek(to: $0) }
-            )
+            WaveformView(progress: controller.duration > 0 ? controller.currentTime / controller.duration : 0, duration: controller.duration, barHeights: resolvedBars, onSeek: { controller.seek(to: $0) })
             .padding(.horizontal, 16)
             .padding(.top, 24)
             .padding(.bottom, 8)
