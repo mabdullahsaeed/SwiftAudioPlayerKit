@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		99AA00012F49000100C0DE01 /* SwiftAudioPlayerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885FF9442F481614002E6EE4 /* SwiftAudioPlayerKit.framework */; };
-		99AA00022F49000100C0DE01 /* SwiftAudioPlayerKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 885FF9442F481614002E6EE4 /* SwiftAudioPlayerKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		99AA00022F49000100C0DE01 /* SwiftAudioPlayerKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 885FF9442F481614002E6EE4 /* SwiftAudioPlayerKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,13 +22,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		99AA00082F49000100C0DE01 /* Embed Frameworks */ = {
+		99AA00082F49000100C0DE01 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				99AA00022F49000100C0DE01 /* SwiftAudioPlayerKit.framework in Embed Frameworks */,
+				99AA00022F49000100C0DE01 /* SwiftAudioPlayerKit.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,7 +132,7 @@
 				99AA00062F49000100C0DE01 /* Sources */,
 				99AA00052F49000100C0DE01 /* Frameworks */,
 				99AA00072F49000100C0DE01 /* Resources */,
-				99AA00082F49000100C0DE01 /* Embed Frameworks */,
+				99AA00082F49000100C0DE01 /* CopyFiles */,
 			);
 			buildRules = (
 			);
