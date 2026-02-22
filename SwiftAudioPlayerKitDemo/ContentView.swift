@@ -6,10 +6,7 @@ struct ContentView: View {
 
     init() {
         let fallback = URL(string: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3")!
-        let source = AudioSource(
-            url: fallback,
-            metadata: AudioMetadata(title: "SDK Demo Audio", artist: "SwiftAudioPlayerKit")
-        )
+        let source = AudioSource(url: fallback, metadata: AudioMetadata(title: "SDK Demo Audio", artist: "SwiftAudioPlayerKit"))
         _controller = StateObject(wrappedValue: AudioPlayerController(audioSource: source))
     }
 

@@ -11,16 +11,7 @@ public struct WaveformView: View {
     public let onSeek: (Double) -> Void
     public let barHeights: [CGFloat]
 
-    public init(
-        progress: Double,
-        duration: Double,
-        barHeights: [CGFloat],
-        barSpacing: CGFloat = 5,
-        maxBarHeight: CGFloat = 35,
-        barColor: Color = .gray.opacity(0.45),
-        progressColor: Color = .accentColor,
-        onSeek: @escaping (Double) -> Void
-    ) {
+    public init(progress: Double, duration: Double, barHeights: [CGFloat], barSpacing: CGFloat = 5, maxBarHeight: CGFloat = 35, barColor: Color = .gray.opacity(0.45), progressColor: Color = .accentColor, onSeek: @escaping (Double) -> Void) {
         self.progress = min(max(progress, 0), 1)
         self.duration = max(duration, 0)
         self.barHeights = barHeights
