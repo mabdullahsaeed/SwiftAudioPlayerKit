@@ -82,6 +82,17 @@ Conform to `AudioPlayerControllerDelegate` to receive playback events:
 2. Select scheme `SwiftAudioPlayerKitDemo`.
 3. Run on Simulator or device.
 
+## Build (CLI)
+
+```bash
+xcodebuild \
+  -project SwiftAudioPlayerKit.xcodeproj \
+  -scheme SwiftAudioPlayerKit \
+  -configuration Debug \
+  -destination 'generic/platform=iOS' \
+  build
+```
+
 ## Notes
 
 - Demo playback uses a public MP3 URL; internet access is required.
