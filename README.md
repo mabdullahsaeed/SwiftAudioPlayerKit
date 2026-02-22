@@ -1,4 +1,4 @@
-# CustomAudioPlayer
+# SwiftAudioPlayerKit
 
 A lightweight Swift audio player SDK for iOS, built with `AVPlayer` and SwiftUI.
 
@@ -16,9 +16,9 @@ It includes:
 
 ## Project Structure
 
-- `CustomAudioPlayer/`
+- `SwiftAudioPlayerKit/`
   - Framework source files
-- `CustomAudioPlayerDemo/`
+- `SwiftAudioPlayerKitDemo/`
   - Demo iOS app target that renders the player UI
 
 ## Core Types
@@ -40,7 +40,7 @@ It includes:
 
 ```swift
 import SwiftUI
-import CustomAudioPlayer
+import SwiftAudioPlayerKit
 
 struct ContentView: View {
     @StateObject private var controller: AudioPlayerController
@@ -78,8 +78,8 @@ Conform to `AudioPlayerControllerDelegate` to receive playback events:
 
 ## Run the Demo
 
-1. Open `CustomAudioPlayer.xcodeproj`.
-2. Select scheme `CustomAudioPlayerDemo`.
+1. Open `SwiftAudioPlayerKit.xcodeproj`.
+2. Select scheme `SwiftAudioPlayerKitDemo`.
 3. Run on Simulator or device.
 
 ## Notes

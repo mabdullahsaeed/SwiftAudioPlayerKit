@@ -1,5 +1,5 @@
 import SwiftUI
-import CustomAudioPlayer
+import SwiftAudioPlayerKit
 
 struct ContentView: View {
     @StateObject private var controller: AudioPlayerController
@@ -8,14 +8,14 @@ struct ContentView: View {
         let fallback = URL(string: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3")!
         let source = AudioSource(
             url: fallback,
-            metadata: AudioMetadata(title: "SDK Demo Audio", artist: "CustomAudioPlayer")
+            metadata: AudioMetadata(title: "SDK Demo Audio", artist: "SwiftAudioPlayerKit")
         )
         _controller = StateObject(wrappedValue: AudioPlayerController(audioSource: source))
     }
 
     var body: some View {
         VStack(spacing: 20) {
-            Text("CustomAudioPlayer Demo")
+            Text("SwiftAudioPlayerKit Demo")
                 .font(.headline)
 
             AudioControlView(controller: controller)
