@@ -1,6 +1,12 @@
 # SwiftAudioPlayerKit
 
-A lightweight Swift audio player SDK for iOS, built with `AVPlayer` and SwiftUI.
+![demo](https://github.com/user-attachments/assets/7869bd17-88f9-4b99-872e-3cdecea728c6)
+
+
+Sometimes you need a simple audio player similar to Whatsapp voice notes or Spotify audio player and do not want to introduce complex calculations to layout the sound bars.
+This SDK provides a simple solution to that problem - calculate different bar heights using random integers
+
+It is built with `AVPlayer` and SwiftUI.
 
 It includes:
 - `AudioPlayerController` for playback state and control
